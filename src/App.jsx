@@ -60,7 +60,7 @@ export default function App() {
         <input type="button" value="Change" onClick={changeCar}/>
       </div>
       <div className='lista'>
-        {autok.map(x => <li onClick={() => {setId(x.id),setTipus(x.tipus), setLoero(x.loero), setSuly(x.suly)}} key={x.id}>{x.tipus}, {x.suly} kg, {x.loero} LE <img src="/public/del.png" onClick={() => delAuto(x.id)}  /> </li> )}
+        {autok.map(x => <li onClick={() => {setId(x.id),setTipus(x.tipus), setLoero(x.loero), setSuly(x.suly)}} key={x.id}>{x.tipus}, {x.suly} kg, {x.loero} LE <img src="del.png" onClick={() => delAuto(x.id)}  /> </li> )}
       </div>
     </div>
   )
